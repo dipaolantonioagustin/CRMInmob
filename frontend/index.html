@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM Inmobiliario - Panel Diario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h1 class="h3">Mis tareas del día</h1>
+      <button class="btn btn-primary">Nueva tarea</button>
+    </div>
+
+    <div class="row g-3 mb-3">
+      <div class="col-md-3"><div class="card"><div class="card-body"><strong>Pendientes:</strong> 12</div></div></div>
+      <div class="col-md-3"><div class="card"><div class="card-body"><strong>Urgentes:</strong> 4</div></div></div>
+      <div class="col-md-3"><div class="card"><div class="card-body"><strong>En progreso:</strong> 6</div></div></div>
+      <div class="col-md-3"><div class="card"><div class="card-body"><strong>Completadas hoy:</strong> 3</div></div></div>
+    </div>
+
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <table class="table table-hover align-middle">
+          <thead>
+            <tr>
+              <th>Prioridad</th>
+              <th>Tarea</th>
+              <th>Vencimiento</th>
+              <th>Referencia</th>
+              <th>Estado</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge bg-danger">Crítica</span></td>
+              <td>Firma de contrato - Dpto. Centro 3A</td>
+              <td>22/03/2026</td>
+              <td>Contacto: Laura Pérez</td>
+              <td><span class="badge bg-warning text-dark">Pendiente</span></td>
+              <td><button class="btn btn-sm btn-outline-primary">Actualizar</button></td>
+            </tr>
+            <tr>
+              <td><span class="badge bg-warning text-dark">Alta</span></td>
+              <td>Negociar renovación de alquiler</td>
+              <td>23/03/2026</td>
+              <td>Carpeta: ALQ-2024-019</td>
+              <td><span class="badge bg-info text-dark">En progreso</span></td>
+              <td><button class="btn btn-sm btn-outline-primary">Actualizar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
